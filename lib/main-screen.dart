@@ -1,6 +1,5 @@
-import 'package:first_flutter_project/detailScreen.dart';
+import 'package:first_flutter_project/detail_screen.dart';
 import 'package:first_flutter_project/model/tourism-place.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatelessWidget {
@@ -10,7 +9,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Wisata Bandung'),
+        title: const Text('Wisata Surabaya'),
       ),
       body: ListView.builder(
         itemBuilder: (context, index) {
@@ -50,7 +49,7 @@ class MainScreen extends StatelessWidget {
                     place.name,
                     style: TextStyle(fontSize: 16.0),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Text(place.location),
