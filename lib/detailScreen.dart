@@ -13,13 +13,12 @@ class DetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Image.network(
-                'https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg'),
+            Image.asset(place.imageAsset),
             Container(
               // Title
               margin: EdgeInsets.only(top: 16.0),
-              child: const Text(
-                "Surabaya Submarine Monument",
+              child: Text(
+                place.name,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 40.0,

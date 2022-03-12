@@ -1,3 +1,4 @@
+import 'package:first_flutter_project/main-screen.dart';
 import 'package:flutter/material.dart';
 import 'package:first_flutter_project/detailScreen.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Contact',
       theme: ThemeData(),
-      home: const DetailScreen(),
+      home: MainScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

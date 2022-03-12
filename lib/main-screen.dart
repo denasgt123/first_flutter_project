@@ -36,7 +36,7 @@ class MainScreen extends StatelessWidget {
         children: <Widget>[
           Expanded(
             flex: 1,
-            child: Image.asset(place.ImageAsset),
+            child: Image.asset(place.imageAsset),
           ),
           Expanded(
             flex: 2,
@@ -45,7 +45,7 @@ class MainScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisSize: MainAxisSize.min,
-                children: const <Widget>[
+                children: <Widget>[
                   Text(
                     place.name,
                     style: TextStyle(fontSize: 16.0),
