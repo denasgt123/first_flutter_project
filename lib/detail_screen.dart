@@ -1,3 +1,4 @@
+import 'package:first_flutter_project/main-screen.dart';
 import 'package:first_flutter_project/model/tourism-place.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +10,17 @@ class DetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(place.name),
+        // leading: GestureDetector(
+        //   onTap: () {
+        //     Navigator.pop(context);
+        //   },
+        //   child: const Icon(
+        //     Icons.arrow_back,
+        //   ),
+        // ),
+      ),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
