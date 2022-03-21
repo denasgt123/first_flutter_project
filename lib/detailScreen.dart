@@ -29,7 +29,7 @@ class DetailScreen extends StatelessWidget {
               margin: const EdgeInsets.symmetric(vertical: 30.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: <Widget>[
+                children: <Widget> [
                   Column(
                     children: const <Widget>[
                       Icon(Icons.calendar_today),
