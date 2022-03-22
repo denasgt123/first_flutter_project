@@ -1,35 +1,21 @@
 import 'package:first_flutter_project/model/tourism-place.dart';
 import 'package:flutter/material.dart';
-import 'package:first_flutter_project/detail_screen.dart';
 
-class MainScreen extends StatelessWidget {
-  const MainScreen({Key? key}) : super(key: key);
+class ListItem extends StatelessWidget {
+  final TourismPlace place;
+  final bool isDone;
+  final Function(bool? value) onCheckboxClick;
+  const ListItem({
+    Key? key,
+    required this.place,
+    required this.isDone,
+    required this.onCheckboxClick,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Wisata Surabaya'),
-      ),
-      body: ListView.builder(
-        itemBuilder: (context, index) {
-          final TourismPlace place = tourismPlaceList[index];
-          return InkWell(
-            onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return DetailScreen(place: place);
-              }));
-            },
-            child: listItem(place),
-          );
-        },
-        itemCount: tourismPlaceList.length,
-      ),
-    );
-  }
-
-  Widget listItem(TourismPlace place) {
     return Card(
+      color: isDone ? Colors.white60 : Colors.white,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -57,6 +43,10 @@ class MainScreen extends StatelessWidget {
               ),
             ),
           ),
+          Checkbox(
+              checkColor: Colors.blueAccent,
+              value: isDone,
+              onChanged: onCheckboxClick),
         ],
       ),
     );

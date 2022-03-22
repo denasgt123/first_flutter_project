@@ -1,4 +1,4 @@
-import 'package:first_flutter_project/main-screen.dart';
+import 'package:first_flutter_project/main_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
