@@ -1,4 +1,4 @@
-import 'package:first_flutter_project/model/tourism-place.dart';
+import 'package:first_flutter_project/model/tourism_place.dart';
 import 'package:flutter/material.dart';
 
 class ListItem extends StatelessWidget {
@@ -44,9 +44,10 @@ class ListItem extends StatelessWidget {
             ),
           ),
           Checkbox(
-              checkColor: Colors.blueAccent,
-              value: isDone,
-              onChanged: onCheckboxClick),
+            checkColor: Colors.blueAccent,
+            value: isDone,
+            onChanged: onCheckboxClick,
+          ),
         ],
       ),
     );
