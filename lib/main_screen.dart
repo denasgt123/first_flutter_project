@@ -22,14 +22,14 @@ class _MainScreenState extends State<MainScreen> {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) {
-                  return DoneTourismList();
+                  return const DoneTourismList();
                 }),
               );
             },
           ),
         ],
       ),
-      body: TourismList(),
+      body: const TourismList(),
     );
   }
 }

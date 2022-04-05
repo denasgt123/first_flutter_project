@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:first_flutter_project/model/tourism_place.dart';
+import 'package:first_flutter_project/data/model/tourism_place.dart';
 
 class DoneTourismProvider extends ChangeNotifier {
   final List<TourismPlace> _doneTourismPlaceList = [];

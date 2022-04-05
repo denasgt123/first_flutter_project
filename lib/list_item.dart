@@ -1,4 +1,4 @@
-import 'package:first_flutter_project/model/tourism_place.dart';
+import 'package:first_flutter_project/data/model/tourism_place.dart';
 import 'package:flutter/material.dart';
 
 class ListItem extends StatelessWidget {
